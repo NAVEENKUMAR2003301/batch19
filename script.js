@@ -1142,7 +1142,10 @@ console.log(totalObj);
 console.clear();
 
 
-      // array merge method 
+      // array merge method
+      
+      
+      
 
       // 1. concat()
 
@@ -1312,33 +1315,264 @@ employee = [
 
       console.log(reduceVal);
       
+      console.clear();
       
       
+      // sort()
+
+      let sample11 = [2,332,"A",3,1,500,7,8,1]
+
+      let sortVal = sample11.sort()
+
+      console.log(sortVal);
+
+
+      // higherorder function
+
+
+      // 1. sort
+
+      let sample12 = [1,4,33,3,6,8,333,2]
+
+      // 1 2 3 4 6 8 33 333
+
+
+      let hsortVal = sample12.sort((a,b)=>{
+        return b-a
+      })
+
+      console.log(hsortVal);
       
       
-      // function one() {
-      //   console.log("hi");
-      // }
-      // function one1() {
-      //   console.log("hii");
-      // }
 
-      // one(one1()); 
+      // 2. some - or 
+
+      let sample13 = [1,2,3,4]
+
+      let someVal = sample13.some((c,i,t)=>{
+        return c%2==1
+
+        // 1%2==1 true
+        // 2%2==1 false
+        // 3%2==1 true
+        // 4%2==1 true
+
+        // true || false || true || false = true
+      })
+
+      console.log(someVal);
       
+
+
+
+      // 3. every - and
+
+
+      let sample14 = [2,2,2,2]
+
+      let everyVal = sample14.every((c,i,t)=>{
+        return i%2==0
+
+        // 0%2==0  true
+        // 1%2==0  false
+      })
       
+
+      console.log(everyVal);
       
+      console.clear();
       
+
+
+// string method
+
+//🔹 Basic String Methods
+
+// length
+
+let str = "javascript"
+
+let strLength = str.length
+
+console.log(strLength);
+
+
+// toUpperCase()
+
+str = "javascript";
+
+let upper = str.toUpperCase()
+
+console.log(upper);
+
+
+// toLowerCase()
+
+let lower = "JAVA"
+
+let lowerCase = lower.toLowerCase()
+
+console.log(lowerCase);
+
+
+// trim()
+
+let str1 = " hello "
+
+console.log(str1);
+
+
+let trimVal = str1.trim()
+
+console.log(trimVal);
+
+
+// trimStart()
+str1 = " hello ";
+
+let start = str1.trimStart()
+
+console.log(start);
+
+
+
+// trimEnd()
+
+
+let end = str1.trimEnd()
+
+console.log(end);
+
+
+// 🔹 Searching & Finding
+
+// indexOf()
+
+let str2 = "javascript"
+
+let indexOfVal = str2.indexOf("a",2) // value , fromIndex
+
+console.log(indexOfVal);
+
+
+// lastIndexOf()
+
+str2 = "javascript";
+
+let lastIndexOfVal1 = str2.lastIndexOf("a",2)
+
+console.log(lastIndexOfVal1);
+
+
+
+
+// includes()
+
+
+str2 = "javascript"
+
+let includesVal1 = str2.includes("J")
+
+console.log(includesVal1);
+
+
+// startsWith()
+
+let startsCheck = str2.startsWith("j")
+
+console.log(startsCheck);
+
+
+// endsWith()
+
+let endsCheck = str2.endsWith("t")
+
+console.log(endsCheck);
+
+
+// 🔹 Extracting Parts of a String
+
+// slice()
+
+let str3 = "helloworld"
+
+let sliceVal1 = str3.slice(5,10)
+
+console.log(sliceVal1);
+
+
+
+// 🔹 Replacing & Modifying
+
+// replace()
+
+let str4 = "javascript"
+
+let replaceVal = str4.replace("java","type") // value , expactval
+console.log(replaceVal);
+
+// concat()
+
+let str5 = "java"
+let str6 = "script"
+
+let finalVal = str5.concat(str6)
+
+console.log(finalVal);
+
+
+// repeat()
+
+let str7 = "javascript"
+
+let repeatVal = str7.repeat(11)
+
+console.log(repeatVal);
+
+// 🔹 Splitting & Joining
+
+// split()
+
+let str8 = "iron-man-spider-man"
+
+let splitVal = str8.split("m")
+
+console.log(splitVal);
+
+
+// 🔹 Character Access
+
+// charAt()
+
+let str9 = "javascript"
+
+let charAtVal = str9.charAt(2)
+
+console.log(charAtVal);
+
+
+// charCodeAt()
+
+let str10 = "java"
+
+let charCodeAtVal = str10.charCodeAt(1)
+
+console.log(charCodeAtVal);
+
       
-
-
-
-
-
-
-  
-
-
-
+    
 
 // // // Date
+
+
+let dateVal = new Date()
+
+console.log(dateVal);
+
+
+// get
+
+
+// set
+
 
