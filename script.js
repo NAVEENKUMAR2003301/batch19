@@ -1560,6 +1560,7 @@ let charCodeAtVal = str10.charCodeAt(1)
 console.log(charCodeAtVal);
 
       
+console.clear();
     
 
 // // // Date
@@ -1572,7 +1573,203 @@ console.log(dateVal);
 
 // get
 
+// year
+
+let getYear = dateVal.getFullYear()
+
+console.log(getYear);
+
+
+// month
+
+let getMonth = dateVal.getMonth()
+
+console.log(getMonth+1);
+
+// date
+
+let getDate =  dateVal.getDate()
+
+console.log(getDate);
+
+// day
+
+let getDay = dateVal.getDay()
+
+console.log(getDay);
+
+// hour
+
+let getHour = dateVal.getHours()
+
+console.log(getHour);
+
+// minutes
+
+let getMinutes = dateVal.getMinutes()
+
+console.log(getMinutes);
+
+// seconds
+
+let getSeconds = dateVal.getSeconds()
+
+console.log(getSeconds);
+
+// time
+
+let time = dateVal.toLocaleTimeString()
+
+console.log(time);
+
+// date
+
+let date = dateVal.toLocaleDateString()
+
+console.log(date);
+
+// time / date
+
+let allData = dateVal.toLocaleString()
+
+console.log(allData);
+
 
 // set
+
+
+let dataval1 = new Date()
+
+console.log(dataval1);
+
+
+// year 
+
+dataval1.setFullYear(2003)
+
+console.log(dataval1);
+
+// date
+
+dataval1.setDate(30)
+
+console.log(dataval1);
+
+// month
+
+dataval1.setMonth(0)
+
+console.log(dataval1);
+
+// hour
+
+dataval1.setHours(23)
+
+console.log(dataval1);
+
+// minutes
+
+dataval1.setMinutes(55)
+
+console.log(dataval1);
+
+// seconds
+
+dataval1.setSeconds(1)
+console.log(dataval1);
+
+
+
+// // birthday day finder
+
+// let year = prompt("enter your birthday year")
+// let month = prompt("enter your birthday month")
+// let date1 =prompt("enter your birthday Date")
+
+// let dataVal2 = new Date()
+
+// dataVal2.setFullYear(year)
+// dataVal2.setMonth(month-1)
+// dataVal2.setDate(date1)
+
+// console.log(dataVal2);
+
+// let dayData = dataVal2.getDay()
+
+
+
+// let dayInfo = ["sun","Mon","tue","wed","thu","fri","sat"]
+
+
+// alert(dayInfo[dayData])
+
+console.clear();
+
+// async
+
+// setTimeout
+
+// setTimeout(()=>{
+
+//   let dataval3 = new Date()
+
+//   console.log(dataval3.toLocaleTimeString());
+  
+
+// },3000)
+
+// // setInterval
+
+// setInterval(()=>{
+//   let dataval3 = new Date();
+
+//   console.log(dataval3.toLocaleTimeString());
+// },5000)
+
+
+function one(){
+  console.log("one");
+  
+}
+
+function two(){
+  console.log("two");
+  
+}
+
+function three(){
+  console.log("three");
+  
+}
+
+one()
+setTimeout(two,2000)
+three()
+
+
+// promise
+
+// 1. resolve
+// 2. reject
+// 3. bending
+
+fetch("https://fakestoreapi.com/products/")
+.then((data)=>{
+  return data.json() 
+})
+.then((jsData)=>{
+  console.log(jsData);
+  jsData.forEach((c,i,t)=>{
+    console.log(c.title);
+    
+  })
+  
+})
+
+
+
+
+
+
 
 
