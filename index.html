@@ -4,51 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
-<style>
+<body>
 
-    .active1{
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .active{
-        width: 500px;
-        height: 300px;
-        background-color: aqua;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        border: 2px solid red;
-        border-bottom-left-radius: 50%;
-        box-shadow: 2px 2px 20px ;
+    <!-- <h1>Dom </h1>
+
+    <input type="text">
+    <button>Add</button>
+    <ol>
         
-    }
-</style>
-<body >
+    </ol> -->
 
-  <!-- hi <h1>hello</h1>
-   <div class="one">hi</div>
-   <div id="two">two</div>
+    <div class="calculator">
+        <input type="text">
+        <button onclick="val('%')">%</button>
+        <button onclick="clearAll()">C</button>
+        <button onclick="delVal()">Del</button>
+        <button onclick="val('/')">/</button>
+        <button onclick="val('7')">7</button>
+        <button onclick="val('8')">8</button>
+        <button onclick="val('9')">9</button>
+        <button onclick="val('*')">*</button>
+        <button onclick="val('4')">4</button>
+        <button onclick="val('5')">5</button>
+        <button onclick="val('6')">6</button>
+        <button onclick="val('-')">-</button>
+        <button onclick="val('1')">1</button>
+        <button onclick="val('2')">2</button>
+        <button onclick="val('3')">3</button>
+        <button onclick="val('+')">+</button>
+        <button onclick="val('00')">00</button>
+        <button onclick="val('0')">0</button>
+        <button onclick="val('.')">.</button>
+        <button onclick="final()">=</button>
+    </div>
 
-   <h2>Chandana</h2>
-   <div class="one1">Supraja</div>
-   <div id="two2">Sairam</div>
-
-   <div class="three">one</div>
-   <div class="three">two</div>
-   <div class="three">three</div>
-   <div class="three">four</div> -->
-
-  <div class="parent"> 
-    hello<div class="child">first</div>
-    <div class="child">second</div>
-    <div class="child">theird</div> hi
-  </div>
-
-   <script src="./script.js"></script>
+    
+    
+    <script src="./script.js"></script>
 </body>
 </html>
