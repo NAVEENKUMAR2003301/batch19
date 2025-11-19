@@ -6,6 +6,60 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
+<style>
+    .api{
+        width: auto;
+        height: auto;
+
+        border: 10px solid black;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        background-color: black;
+    }
+
+    .api > div{
+        width: 250px;
+        height: 350px;
+
+        background-color: white;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        gap: 10px;
+
+        border: 3px solid rgb(144, 231, 73);
+
+        border-bottom-left-radius:12px ;
+        border-top-right-radius:12px ;
+    }
+
+    .api > div > img {
+         width: 200px;
+         height: 200px;
+    }
+
+    .api > div > h1 {
+        font-size: 16px;
+    }
+
+    .api > div > h3 {
+        width: 100px;
+        height: auto;
+
+        background-color: black;
+        color: white;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
 <body>
 
     <!-- <h1>Dom </h1>
@@ -16,7 +70,7 @@
         
     </ol> -->
 
-    <div class="calculator">
+    <!-- <div class="calculator">
         <input type="text">
         <button onclick="val('%')">%</button>
         <button onclick="clearAll()">C</button>
@@ -38,10 +92,11 @@
         <button onclick="val('0')">0</button>
         <button onclick="val('.')">.</button>
         <button onclick="final()">=</button>
-    </div>
+    </div> -->
 
+    <div class="api">
+    </div>
     
-    
-    <script src="./script.js"></script>
+    <script  src="./script.js"></script>
 </body>
 </html>
